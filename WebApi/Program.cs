@@ -39,7 +39,7 @@ namespace GitHubApiApp
         {
             using var httpClient = new HttpClient();
 
-            // GitHub API requires a User-Agent header
+            
             httpClient.DefaultRequestHeaders.Add("User-Agent", "StudentApp");
 
             var response = await httpClient.GetAsync(url);
